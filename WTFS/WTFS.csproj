@@ -238,13 +238,43 @@
     <Content Include="App_Themes\Images\zfb.JPG" />
     <Content Include="App_Themes\Images\zTreeStandard.gif" />
     <Content Include="App_Themes\Images\zTreeStandard.png" />
+    <Content Include="App_Themes\Scripts\artDialog\artDialog.js" />
+    <Content Include="App_Themes\Scripts\artDialog\artDialog.source.js" />
+    <Content Include="App_Themes\Scripts\artDialog\iframeTools.source.js" />
+    <Content Include="App_Themes\Scripts\artDialog\jquery.artDialog.js" />
+    <Content Include="App_Themes\Scripts\artDialog\jquery.artDialog.source.js" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue.css" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\bg.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\bg2.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\bg_css3.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\bg_css3_2.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\close.hover.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\close.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\e.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\n.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\ne.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\nw.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\s.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\se.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\sw.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\blue\ie6\w.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\icons\error.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\icons\face-sad.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\icons\face-smile.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\icons\loading.gif" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\icons\question.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\icons\succeed.png" />
+    <Content Include="App_Themes\Scripts\artDialog\skins\icons\warning.png" />
     <Content Include="App_Themes\Scripts\FunctionJS.js" />
     <Content Include="App_Themes\Scripts\jquery-1.8.2.min.js" />
+    <Content Include="App_Themes\Scripts\jquery.md5.js" />
     <Content Include="App_Themes\Scripts\jquery.min.js" />
     <Content Include="App_Themes\Scripts\myui.min.js" />
+    <Content Include="App_Themes\Scripts\Validator\JValidator.js" />
     <Content Include="App_Themes\Styles\login.css" />
     <Content Include="App_Themes\Styles\myui.min.css" />
     <Content Include="App_Themes\Styles\Site.css" />
+    <Content Include="BaseAuth\SysUser\UpdateUserPwd.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -269,6 +299,7 @@
     <Content Include="App_Themes\fonts\fontawesome-webfont.woff" />
     <Content Include="App_Themes\fonts\fontawesome-webfont.woff2" />
     <Content Include="App_Themes\fonts\FontAwesome.otf" />
+    <Content Include="BaseAuth\SysUser\UserInfo.ashx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Main.aspx" />
@@ -309,6 +340,9 @@
     <Content Include="WebHandlers\VerifyCode.ashx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -318,6 +352,16 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BaseAuth\SysUser\UpdateUserPwd.aspx.cs">
+      <DependentUpon>UpdateUserPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysUser\UpdateUserPwd.aspx.designer.cs">
+      <DependentUpon>UpdateUserPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysUser\UserInfo.ashx.cs">
+      <DependentUpon>UserInfo.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

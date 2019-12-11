@@ -62,6 +62,8 @@
     <Compile Include="WebHelper\CookieHelper.cs" />
     <Compile Include="WebHelper\RequestSession.cs" />
     <Compile Include="WebHelper\SessionUser.cs" />
+    <Compile Include="WebHelper\ShowMsgHelper.cs" />
+    <Compile Include="WebHelper\WebHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FileHelper\" />
