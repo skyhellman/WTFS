@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Configuration;
+using System.Configuration;
 using WTFS.DataBase.SqlServer;
 using WTFS.Common.CodeHelper;
 
@@ -22,7 +25,10 @@ namespace WTFS.DataBase.BaseHelper
         /// <returns></returns>
         public static IDbHelper SqlDataBase()
         {
-            return new SqlServerHelper(ConfigHelper.GetAppSettings("SqlServer_RM_DB"));
+            //return new SqlServerHelper(ConfigHelper.GetAppSettings("SqlServer_RM_DB"));
+            string connectstr = WebConfigurationManager.ConnectionStrings["RMconnectionStrings"].ToString();
+            return new SqlServerHelper(connectstr);
+
         }
     }
 }

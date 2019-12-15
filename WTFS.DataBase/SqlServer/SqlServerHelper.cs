@@ -69,9 +69,9 @@ namespace WTFS.DataBase.SqlServer
             //在并发时，使用单一对象
             if (db == null)
             {
-                if (ConfigHelper.GetAppSettings("ConStringEncrypt") == "true")//判断是否加密
-                    db = new SqlDatabase(DESEncrypt.Decrypt(connectionString));
-                else
+                //if (ConfigHelper.GetAppSettings("ConStringEncrypt") == "true")//判断是否加密
+                //    db = new SqlDatabase(DESEncrypt.Decrypt(connectionString));
+                //else
                     db = new SqlDatabase(connectionString);
                 return db;
             }

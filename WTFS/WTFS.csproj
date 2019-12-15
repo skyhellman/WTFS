@@ -459,6 +459,7 @@
     <Content Include="Site.Mobile.Master" />
     <Content Include="WebHandlers\Mainframe.ashx" />
     <Content Include="WebHandlers\VerifyCode.ashx" />
+    <Content Include="WebHandlers\Common_Ajax.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\PageBase.cs">
@@ -584,6 +585,9 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebHandlers\Common_Ajax.ashx.cs">
+      <DependentUpon>Common_Ajax.ashx</DependentUpon>
     </Compile>
     <Compile Include="WebHandlers\Mainframe.ashx.cs">
       <DependentUpon>Mainframe.ashx</DependentUpon>

@@ -113,7 +113,7 @@
                         <a id="lockpage" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lock" data-widget="tooltip-lock">
                             <span class="fa fa-eye-slash" aria-hidden="true"></span>
                         </a>
-                        <a data-toggle="tooltip" data-placement="top" title="" href="#" data-original-title="Logout">
+                        <a data-toggle="tooltip" data-placement="top" title="" href="Login.aspx" data-original-title="Logout">
                             <span class="fa fa-power-off" aria-hidden="true"></span>
                         </a>
                     </div>
@@ -169,7 +169,7 @@
                                 <span class="direct-chat-timestamp pull-right">18/02/05 6:00am</span>
                             </div>
                             <!-- /.direct-chat-info -->
-                            <img class="direct-chat-img" src="App_Themes/Images/sl.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+                            <img class="direct-chat-img" src="App_Themes/Images/sl.jpg" alt="Message User Image" /><!-- /.direct-chat-img -->
                             <div class="direct-chat-text">
                                 早上好
                             </div>
@@ -183,7 +183,7 @@
                                 <span class="direct-chat-timestamp pull-left">18/02/05 7:00am</span>
                             </div>
                             <!-- /.direct-chat-info -->
-                            <img class="direct-chat-img" src="App_Themes/Images/nm.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+                            <img class="direct-chat-img" src="App_Themes/Images/nm.jpg" alt="Message User Image" /><!-- /.direct-chat-img -->
                             <div class="direct-chat-text">
                                 早上好!
                             </div>

@@ -358,7 +358,7 @@ namespace WTFS.BaseAuth.SysUser
             ht["User_Pwd"] = Md5Helper.MD5(User_Pwd.Value, 32);
             ht["User_Sex"] = User_Sex.Value;
             ht["Email"] = Email.Value;
-            ht["Title"] = Title.Value;
+            ht["Title"] = UTitle.Value;
             ht["User_Remark"] = User_Remark.Value;
             if (!string.IsNullOrEmpty(_key))
             {

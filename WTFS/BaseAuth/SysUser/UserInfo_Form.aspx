@@ -146,7 +146,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <%-- 所有打勾复选框值--%>
+    <%-- 所有打勾复选框值--%>
     <input id="checkbox_value" type="hidden" runat="server" />
     <%--获取附加信息值--%>
     <input id="AppendProperty_value" type="hidden" runat="server" />
@@ -228,13 +228,13 @@
                     创建用户:
                 </th>
                 <td>
-                    <input id="CreateUserName" disabled runat="server" type="text" class="txt" style="width: 200px" />
+                    <input id="CreateUserName" disabled="disabled" runat="server" type="text" class="txt" style="width: 200px" />
                 </td>
                 <th>
                     创建时间:
                 </th>
                 <td>
-                    <input id="CreateDate" disabled runat="server" type="text" class="txt" style="width: 200px" />
+                    <input id="CreateDate" disabled="disabled" runat="server" type="text" class="txt" style="width: 200px" />
                 </td>
             </tr>
             <tr>
@@ -242,13 +242,13 @@
                     修改用户:
                 </th>
                 <td>
-                    <input id="ModifyUserName" disabled runat="server" type="text" class="txt" style="width: 200px" />
+                    <input id="ModifyUserName" disabled="disabled" runat="server" type="text" class="txt" style="width: 200px" />
                 </td>
                 <th>
                     修改时间:
                 </th>
                 <td>
-                    <input id="ModifyDate" disabled runat="server" type="text" class="txt" style="width: 200px" />
+                    <input id="ModifyDate" disabled="disabled" runat="server" type="text" class="txt" style="width: 200px" />
                 </td>
             </tr>
             <tr>
@@ -256,7 +256,7 @@
                     职称:
                 </th>
                 <td colspan="3">
-                    <input id="Title" runat="server" type="text" class="txt" style="width: 550px" />
+                    <input id="UTitle" runat="server" type="text" class="txt" style="width: 550px" />
                 </td>
             </tr>
             <tr>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.Configuration;
 using System.Xml;
 using System.IO;
 using System.Configuration;
@@ -25,7 +26,8 @@ namespace WTFS.Common.CodeHelper
         /// <returns></returns>
         public static string GetAppSettings(string key)
         {
-            return ConfigurationManager.AppSettings[key].ToString().Trim();
+            //return ConfigurationManager.AppSettings[key].ToString().Trim();
+            return WebConfigurationManager.ConnectionStrings["RMconnectionStrings"].ToString(); 
         }
         /// <summary>
         /// 修改配置文件

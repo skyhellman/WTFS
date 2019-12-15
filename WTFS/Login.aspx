@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head >
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>登录页面</title>
     <link href="/App_Themes/Styles/Site.css" rel="stylesheet" type="text/css" />
@@ -64,7 +64,7 @@
                 var userPwd = $("#txtUserPwd").val();
                 var code = $("#txtCode").val();
                 var parm = 'action=login&user_Account=' + escape(userName) + '&userPwd=' + escape(userPwd) + '&code=' + escape(code);
-                getAjax('Frame.ashx', parm, function (rs) {
+                getAjax('/WebHandlers/Mainframe.ashx', parm, function (rs) {
                     if (parseInt(rs) == 1) {
                         $("#txtCode").focus();
                         $("#errorMsg2").html("验证码输入不正确");
@@ -99,7 +99,7 @@
         }
         //登陆加载
         function Load() {
-            window.location.href = 'MainSwitch.aspx';
+            window.location.href = 'Main.aspx';
             return false;
         }
         //清空

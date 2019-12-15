@@ -45,7 +45,7 @@
             var key = CheckboxValue();
             if (IsDelData(key)) {
                 var delparm = 'action=Virtualdelete&module=用户管理&tableName=Base_UserInfo&pkName=User_ID&pkVal=' + key;
-                delConfig('/WebHandlers/Mainframe.ashx', delparm)
+                delConfig('WebHandlers/Common_Ajax.ashx', delparm)
             }
         }
         //授 权
