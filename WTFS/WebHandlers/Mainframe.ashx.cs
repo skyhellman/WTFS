@@ -31,22 +31,22 @@ namespace WTFS.WebHandlers
             string Action = context.Request["action"];                      //提交动作
             string user_Account = context.Request["user_Account"];          //账户
             string userPwd = context.Request["userPwd"];                    //密码
-            string code = context.Request["code"];                          //验证码
+            //string code = context.Request["code"];                          //验证码
             UserInfo_IDAO user_idao = new UserInfo_Dal();
             System_IDAO sys_idao = new System_Dal();
             IPScanerHelper objScan = new IPScanerHelper();
             switch (Action)
             {
                 case "login":
-                    if (code.ToLower() != context.Session["dt_session_code"].ToString().ToLower())
-                    {
-                        context.Response.Write("1");//验证码输入不正确！
-                        context.Response.End();
-                    }
+                    //if (code.ToLower() != context.Session["dt_session_code"].ToString().ToLower())
+                    //{
+                    //    context.Response.Write("1");//验证码输入不正确！
+                    //    context.Response.End();
+                    //}
                     DataTable dtlogin = user_idao.UserLogin(user_Account.Trim(), userPwd.Trim());
                     if (dtlogin != null)
                     {
-                        objScan.DataPath = context.Server.MapPath("/Themes/IPScaner/QQWry.Dat");
+                        objScan.DataPath = context.Server.MapPath("/App_Themes/IPScaner/QQWry.Dat");
                         objScan.IP = RequestHelper.GetIP();
                         string OWNER_address = objScan.IPLocation();
                         if (dtlogin.Rows.Count != 0)

@@ -55,7 +55,7 @@ namespace WTFS.App_Code
         {
             bool IsOK = false;
             //获取当前访问页面地址
-            string requestPath = RequestHelper.GetScriptName;
+            string requestPath = RequestHelper.GetScriptName+".aspx";
             string[] filterUrl = { "/Contact.aspx", "/BaseAuth/SysUser/UpdateUserPwd.aspx" };//过滤特别页面
             //对上传的文件的类型进行一个个匹对
             for (int i = 0; i < filterUrl.Length; i++)

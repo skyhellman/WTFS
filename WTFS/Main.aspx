@@ -4,15 +4,26 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
-    <title></title>
+    <title>首页</title>
+    <link href="/App_Themes/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="/App_Themes/Scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="/App_Themes/Scripts/Validator/JValidator.js" type="text/javascript"></script>
+    <link href="/App_Themes/Scripts/ShowMsg/msgbox.css" rel="stylesheet" type="text/css"/>
+    <script src="/App_Themes/Scripts/ShowMsg/msgbox.js" type="text/javascript"></script>
+    <link href="/App_Themes/Scripts/artDialog/skins/blue.css" rel="stylesheet" type="text/css"/>
+     <script src="/App_Themes/Scripts/artDialog/artDialog.source.js" type="text/javascript"></script>
+    <script src="/App_Themes/Scripts/artDialog/iframeTools.source.js" type="text/javascript"></script>
+    <script src="/App_Themes/Scripts/TreeTable/jquery.treeTable.js" type="text/javascript"></script>
+    <script src="/App_Themes/Scripts/FunctionJS.js" type="text/javascript"></script>
+    <script src="/App_Themes/Scripts/MainFrame.js" type="text/javascript"></script>
+    <link href="/App_Themes/Styles/Menu.css" rel="stylesheet" type="text/css" />
     <link href="/App_Themes/Styles/myui.min.css" rel="stylesheet" type="text/css" />
-     
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
-   <%-- <form id="form1" runat="server">--%>
+    <%--<form id="form1" runat="server">--%>
         <div class="wrapper">
             <!-- Main Header -->
             <header class="main-header">
@@ -63,7 +74,7 @@
                                     <!-- The user image in the navbar-->
                                     <img src="App_Themes/Images/sl.jpg" class="user-image" alt="User Image" />
                                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                    <span class="hidden-xs">User1</span>
+                                    <span class="hidden-xs"  ><%=ViewState["username"].ToString() %></span>
                                 </a>
                             </li>
                         </ul>
@@ -76,9 +87,13 @@
                 <section class="sidebar">
                     <!-- Sidebar Menu -->
                     <ul class="sidebar-menu" data-widget="tree">
+                          <%=strHtml %>
+                        </ul>
+
+                    <%--<ul class="sidebar-menu" data-widget="tree">
                         <li class="treeview menu-open active">
                             <a href="#">
-                                <i class="fa fa-folder"></i><span>页面</span>
+                                <i class="fa fa-folder"></i><span>基础权限</span>
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
@@ -100,7 +115,7 @@
                                 <li><a href="#" data-addtab="About" data-target="#MasterTabs" data-title="cesnk" data-url="About.aspx"><i class="fa fa-circle-o"></i>erf dsw </a></li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul>--%>
                     <!-- /.sidebar-menu -->
 
                     <div class="sidebar-footer hidden-small fadeInLeft animated" id="sidebar-footer-bar">
@@ -114,7 +129,7 @@
                             <span class="fa fa-eye-slash" aria-hidden="true"></span>
                         </a>
                         <a data-toggle="tooltip" data-placement="top" title="" href="Login.aspx" data-original-title="Logout">
-                            <span class="fa fa-power-off" aria-hidden="true"></span>
+                            <span class="fa fa-power-off" aria-hidden="true" ></span>
                         </a>
                     </div>
                 </section>
@@ -125,7 +140,7 @@
                 <!-- Main content -->
                 <section class="content container-fluid" style="padding: 0px">
                     <ul class="nav nav-tabs menu-tabs" id="MasterTabs" role="tablist">
-                        <li class="nav-tabs-header active" role="presentation">
+                        <li class="nav-tabs-header active" role="presentation" >
                             <a aria-controls="home" data-toggle="tab" href="#home" role="tab">
                                 <i class="fa fa-home"></i>Home
                             </a>
@@ -134,6 +149,8 @@
                     <!-- Tab panes -->
                     <div class="tab-content fixheight">
                         <div class="tab-pane active" id="home" role="tabpanel">
+                             <iframe id="main" name="main" style="width:100%;height:100%; border:0; "  src="Contact.aspx"></iframe>
+
                         </div>
                     </div>
                 </section>
@@ -231,8 +248,7 @@
                 </a>
             </div>
             <!-- /. Chat-Area-->
-        </div>
-
+        </div> 
         <!-- ./wrapper -->
         <div id="modal" class="hold-transition lockscreen" style="display: none">
             <div class="lockscreen-wrapper">
@@ -265,8 +281,7 @@
         </div>
         <!-- ./ 锁定屏幕 -->
         <script src="App_Themes/Scripts/jquery-3.4.1.min.js"></script>
-        <script src="App_Themes/Scripts/myui.min.js"></script>
-
-   <%-- </form>--%>
+        <script src="App_Themes/Scripts/myui.min.js"></script> 
+    <%--</form>--%>
 </body>
 </html>

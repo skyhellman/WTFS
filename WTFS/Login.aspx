@@ -43,11 +43,13 @@
                 $("#txtUserPwd").focus();
                 $("#errorMsg1").html("密码不能为空");
                 return false;
-            } else if (code == "") {
-                $("#txtCode").focus();
-                $("#errorMsg2").html("验证码不能为空");
-                return false;
-            } else {
+               } 
+                // else if (code == "") {
+            //    $("#txtCode").focus();
+            //    $("#errorMsg2").html("验证码不能为空");
+            //    return false;
+            //} 
+                else {
                 return true;
             }
         }
@@ -141,7 +143,7 @@
                         style="width: 122px;" />&nbsp;<span id="errorMsg1" class="errorMsg"></span>
                 </div>
             </dd>
-            <dd>
+          <%--  <dd>
                 <div class="s5">
                     验证码：</div>
                 <div class="s6">
@@ -152,7 +154,7 @@
                         onclick="ToggleCode(this.id, '/WebHandlers/VerifyCode.ashx');return false;" />
                     <span id="errorMsg2" class="errorMsg"></span>
                 </div>
-            </dd>
+            </dd>--%>
             <dd>
                 <div class="load">
                     <img src="../App_Themes/Images/Login/loading.gif" /></div>

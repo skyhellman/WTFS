@@ -153,8 +153,7 @@ namespace WTFS.DataBase.BaseHelper
                                                 AND M.DeleteMark = 1
                                     ) M
                             GROUP BY M.Menu_Id ,M.Menu_Name ,M.Menu_Title ,M.Menu_Img,M.TARGET ,M.ParentId ,M.NavigateUrl ,M.SortCode,M.Menu_Type ORDER BY M.SortCode");
-            SqlParam[] para = {
-                                         new SqlParam("@User_ID",UserId)};
+            SqlParam[] para = { new SqlParam("@User_ID",UserId)};
             StringBuilder sb_html = new StringBuilder();
             string URL = RequestHelper.GetScriptName;
             DataTable dt_Menu = DataFactory.SqlDataBase().GetDataTableBySQL(strSql, para);//获取所有菜单
@@ -169,7 +168,8 @@ namespace WTFS.DataBase.BaseHelper
         {
             try
             {
-                DataTable dt = DataTableHelper.GetNewDataTable(dt_Menu, "NavigateUrl='" + NavigateUrl + "'");
+                //DataTable dt = DataTableHelper.GetNewDataTable(dt_Menu, "NavigateUrl='" + NavigateUrl + "'");
+                DataTable dt = DataTableHelper.GetNewDataTable(dt_Menu, "NavigateUrl='" + NavigateUrl + ".aspx'");
                 return dt.Rows[0]["Menu_Id"].ToString();
             }
             catch

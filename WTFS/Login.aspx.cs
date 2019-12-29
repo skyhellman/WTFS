@@ -11,7 +11,14 @@ namespace WTFS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                // string UserId = RequestSession.GetSessionUser().UserId.ToString();//用户ID
+                // string UserName= RequestSession.GetSessionUser().UserName.ToString();//用户Name
+                ViewState["userid"] = "48f3889c-af8d-401f-ada2-c383031af92d";// UserId;
+                ViewState["username"] = "管理员";// UserName;
+ 
+            }
         }
     }
 }
