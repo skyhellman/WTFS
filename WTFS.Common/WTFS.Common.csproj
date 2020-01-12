@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -56,6 +57,7 @@
     <Compile Include="DataHelper\ReaderToIListHelper.cs" />
     <Compile Include="EncryptHelper\DESEncrypt.cs" />
     <Compile Include="EncryptHelper\Md5Helper.cs" />
+    <Compile Include="FileHelper\FileHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIHelper\ControlBindHelper.cs" />
     <Compile Include="UIHelper\IPScanerHelper.cs" />
@@ -65,8 +67,6 @@
     <Compile Include="WebHelper\ShowMsgHelper.cs" />
     <Compile Include="WebHelper\WebHelper.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FileHelper\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

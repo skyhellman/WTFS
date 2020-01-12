@@ -2107,12 +2107,32 @@
     <Content Include="App_Themes\Styles\myui.min.css" />
     <Content Include="App_Themes\Styles\pagination.css" />
     <Content Include="App_Themes\Styles\Site.css" />
+    <Content Include="BaseAuth\SysDataCenter\Backup_Confirm.aspx" />
+    <Content Include="BaseAuth\SysDataCenter\Backup_List.aspx" />
+    <Content Include="BaseAuth\SysDataCenter\DataCenter_Conten.aspx" />
+    <Content Include="BaseAuth\SysDataCenter\DataCenter_Index.aspx" />
+    <Content Include="BaseAuth\SysDataCenter\DataCenter_Left.aspx" />
+    <Content Include="BaseAuth\SysDataCenter\SQLQuery.aspx" />
+    <Content Include="BaseAuth\SysLog\LoginList.aspx" />
     <Content Include="BaseAuth\SysMenu\AllotButton_Form.aspx" />
     <Content Include="BaseAuth\SysMenu\Button_Form.aspx" />
     <Content Include="BaseAuth\SysMenu\Button_List.aspx" />
     <Content Include="BaseAuth\SysMenu\Icons_List.aspx" />
     <Content Include="BaseAuth\SysMenu\Menu_Form.aspx" />
     <Content Include="BaseAuth\SysMenu\Menu_List.aspx" />
+    <Content Include="BaseAuth\SysOrg\Organization_Form.aspx" />
+    <Content Include="BaseAuth\SysOrg\Organization_List.aspx" />
+    <Content Include="BaseAuth\SysPersonal\CurrentUserManager.aspx" />
+    <Content Include="BaseAuth\SysPersonal\Individuation_Set.aspx" />
+    <Content Include="BaseAuth\SysRole\AllotAuthority_Form.aspx" />
+    <Content Include="BaseAuth\SysRole\Role_Form.aspx" />
+    <Content Include="BaseAuth\SysRole\Role_Info.aspx" />
+    <Content Include="BaseAuth\SysRole\Role_List.aspx" />
+    <Content Include="BaseAuth\SysUserGroup\AllotAuthority_Form.aspx" />
+    <Content Include="BaseAuth\SysUserGroup\UserGroupSet.aspx" />
+    <Content Include="BaseAuth\SysUserGroup\UserGroup_Form.aspx" />
+    <Content Include="BaseAuth\SysUserGroup\UserGroup_Info.aspx" />
+    <Content Include="BaseAuth\SysUserGroup\UserGroup_List.aspx" />
     <Content Include="BaseAuth\SysUser\UpdateUserPwd.aspx" />
     <Content Include="BaseAuth\SysUser\UserInfo_Form.aspx" />
     <Content Include="BaseAuth\SysUser\UserInfo_Index.aspx" />
@@ -2207,6 +2227,7 @@
     <Content Include="App_Themes\Scripts\TreeTable\css\vssver2.scc" />
     <Content Include="App_Themes\Scripts\TreeView\images\Thumbs.db" />
     <Content Include="BaseAuth\SysMenu\Menu_List.ashx" />
+    <Content Include="BaseAuth\SysUserGroup\UserGroup.ashx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Main.aspx" />
@@ -2263,6 +2284,55 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BaseAuth\SysDataCenter\Backup_Confirm.aspx.cs">
+      <DependentUpon>Backup_Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\Backup_Confirm.aspx.designer.cs">
+      <DependentUpon>Backup_Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\Backup_List.aspx.cs">
+      <DependentUpon>Backup_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\Backup_List.aspx.designer.cs">
+      <DependentUpon>Backup_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\DataCenter_Conten.aspx.cs">
+      <DependentUpon>DataCenter_Conten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\DataCenter_Conten.aspx.designer.cs">
+      <DependentUpon>DataCenter_Conten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\DataCenter_Index.aspx.cs">
+      <DependentUpon>DataCenter_Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\DataCenter_Index.aspx.designer.cs">
+      <DependentUpon>DataCenter_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\DataCenter_Left.aspx.cs">
+      <DependentUpon>DataCenter_Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\DataCenter_Left.aspx.designer.cs">
+      <DependentUpon>DataCenter_Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\SQLQuery.aspx.cs">
+      <DependentUpon>SQLQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysDataCenter\SQLQuery.aspx.designer.cs">
+      <DependentUpon>SQLQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysLog\LoginList.aspx.cs">
+      <DependentUpon>LoginList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysLog\LoginList.aspx.designer.cs">
+      <DependentUpon>LoginList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BaseAuth\SysMenu\AllotButton_Form.aspx.cs">
       <DependentUpon>AllotButton_Form.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2307,6 +2377,100 @@
     </Compile>
     <Compile Include="BaseAuth\SysMenu\Menu_List.aspx.designer.cs">
       <DependentUpon>Menu_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysOrg\Organization_Form.aspx.cs">
+      <DependentUpon>Organization_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysOrg\Organization_Form.aspx.designer.cs">
+      <DependentUpon>Organization_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysOrg\Organization_List.aspx.cs">
+      <DependentUpon>Organization_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysOrg\Organization_List.aspx.designer.cs">
+      <DependentUpon>Organization_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysPersonal\CurrentUserManager.aspx.cs">
+      <DependentUpon>CurrentUserManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysPersonal\CurrentUserManager.aspx.designer.cs">
+      <DependentUpon>CurrentUserManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysPersonal\Individuation_Set.aspx.cs">
+      <DependentUpon>Individuation_Set.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysPersonal\Individuation_Set.aspx.designer.cs">
+      <DependentUpon>Individuation_Set.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysRole\AllotAuthority_Form.aspx.cs">
+      <DependentUpon>AllotAuthority_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysRole\AllotAuthority_Form.aspx.designer.cs">
+      <DependentUpon>AllotAuthority_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysRole\Role_Form.aspx.cs">
+      <DependentUpon>Role_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysRole\Role_Form.aspx.designer.cs">
+      <DependentUpon>Role_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysRole\Role_Info.aspx.cs">
+      <DependentUpon>Role_Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysRole\Role_Info.aspx.designer.cs">
+      <DependentUpon>Role_Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysRole\Role_List.aspx.cs">
+      <DependentUpon>Role_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysRole\Role_List.aspx.designer.cs">
+      <DependentUpon>Role_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\AllotAuthority_Form.aspx.cs">
+      <DependentUpon>AllotAuthority_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\AllotAuthority_Form.aspx.designer.cs">
+      <DependentUpon>AllotAuthority_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroup.ashx.cs">
+      <DependentUpon>UserGroup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroupSet.aspx.cs">
+      <DependentUpon>UserGroupSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroupSet.aspx.designer.cs">
+      <DependentUpon>UserGroupSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroup_Form.aspx.cs">
+      <DependentUpon>UserGroup_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroup_Form.aspx.designer.cs">
+      <DependentUpon>UserGroup_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroup_Info.aspx.cs">
+      <DependentUpon>UserGroup_Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroup_Info.aspx.designer.cs">
+      <DependentUpon>UserGroup_Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroup_List.aspx.cs">
+      <DependentUpon>UserGroup_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseAuth\SysUserGroup\UserGroup_List.aspx.designer.cs">
+      <DependentUpon>UserGroup_List.aspx</DependentUpon>
     </Compile>
     <Compile Include="BaseAuth\SysUser\UpdateUserPwd.aspx.cs">
       <DependentUpon>UpdateUserPwd.aspx</DependentUpon>
